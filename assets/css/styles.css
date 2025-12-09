@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul,
+nav ul {
+    background-color: #2f2f33;
+    list-style: none;
+    display: flex;
+    padding: 15px;
+    gap: 2px;
+}
+
+footer a,
+nav a {
+    text-decoration: none;
+    color: rgb(243, 235, 235);
+    font-weight: bold;
+    margin-left: 0.5cm;
+}
+
+a:hover {
+    color: rgb(38, 156, 211);
+}
+
+#div2 {
+    float: right;
+    background-color: rgb(160, 155, 155);
+    width: 400px;
+    height: 420px;
+    font-size: 12px;
+}
+
+h1 {
+    margin-left: 5px;
+}
+
+h2,
+p {
+    margin-left: 5px;
+}
+
+section img {
+    margin: 0;
+    padding: 5;
+    height: auto;
+    width: 100%;
+}
+
+
+form {
+    width: 70%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: inline-block;
+    width: 180px;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    padding: 8px;
+    width: 250px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+}
+
+button {
+    padding: 10px 20px;
+    background: #3e8ed0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button:hover {
+    background: #0b0c0e;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-left: 180px;
+    display: none;
+}
+
+/* ----- Մոբայլ տարբերակ (մինչև 600px) ----- */
+@media screen and (max-width: 350px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav img {
+        width: 200px;
+        /* փոքրացվում է պատկերն */
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    nav p {
+        margin: 0;
+    }
+
+    footer ul,
+    nav ul {
+        flex-direction: column;
+        /* մենյուի կետերը դառնում են սյունակ */
+        gap: 10px;
+        margin-top: 10px;
+        margin-left: 0;
+        /* մոբայլում margin-left պետք չէ */
+        padding: 0;
+    }
+
+    footer ul li a,
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    #div2 {
+        background: #c5c3c3;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        width: 70%;
+    }
+
+    #div2 h2 {
+        margin: 0;
+        text-align: left;
+        font-size: 16px;
+    }
+
+    form {
+        width: 95%;
+        /* ֆորմը դառնում է հարմար մոբայլի համար */
+    }
+
+    label {
+        width: 100%;
+        /* label-երը գծվում են վերև */
+        margin-bottom: 5px;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+        /* դաշտերը լրիվ լայն */
+    }
+
+    #div2 {
+        width: 95%;
+        margin-left: 0;
+        /* ձախ տանել */
+        margin-right: auto;
+        /* աջը թողնել ազատ */
+        text-align: left;
+        /* տեքստը նույնպես ձախ */
+    }
+}

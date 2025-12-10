@@ -6,15 +6,10 @@ body {
 
 .logo-container {
     display: flex;
+    position: relative;
     align-items: flex-end;
     /* 🔥 Տեքստը կիջեցնի ստորին եզրին */
     gap: 30%;
-}
-
-.tagline {
-    margin-top: 25px;
-    /* 🔽 Տեքստը կը իջեցնէ */
-    font-size: 32px;
 }
 
 footer ul,

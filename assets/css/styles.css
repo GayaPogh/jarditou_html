@@ -4,6 +4,19 @@ body {
     padding: 0;
 }
 
+.logo-container {
+    display: flex;
+    align-items: flex-end;
+    /* 🔥 Տեքստը կիջեցնի ստորին եզրին */
+    gap: 30%;
+}
+
+.tagline {
+    margin-top: 25px;
+    /* 🔽 Տեքստը կը իջեցնէ */
+    font-size: 32px;
+}
+
 footer ul,
 nav ul {
     background-color: #2f2f33;
@@ -68,23 +81,27 @@ fieldset {
 
 label {
     display: inline-block;
-    width: 180px;
+    width: 160px;
     margin-bottom: 8px;
+}
+
+label[for="accept"] {
+    display: inline-block;
+    width: auto;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="date"],
+input[type="adresse"],
+input[type="ville"],
+input[type="prénom"],
 select,
 textarea {
     padding: 8px;
     width: 250px;
     border: 1px solid #aaa;
     border-radius: 5px;
-}
-
-textarea {
-    resize: vertical;
 }
 
 input[type="radio"],
@@ -189,5 +206,11 @@ button:hover {
         /* աջը թողնել ազատ */
         text-align: left;
         /* տեքստը նույնպես ձախ */
+    }
+
+    .logo-container {
+        flex-direction: column;
+        /* Mobile → դառնան մեկ սյուն */
+        text-align: center;
     }
 }
